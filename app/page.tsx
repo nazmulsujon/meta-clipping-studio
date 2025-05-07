@@ -18,8 +18,8 @@ export default function Home() {
       <ClientsSection />
       <ShowcaseSection />
       <TrialBanner />
-      {/* <BlogsSection />
-      <Footer /> */}
+      <BlogsSection />
+      <Footer />
     </main>
   )
 }

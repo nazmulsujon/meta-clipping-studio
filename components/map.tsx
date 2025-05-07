@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+// @ts-ignore 
 import L from "leaflet"
 import "leaflet/dist/leaflet.css"
 import { siteConfig } from "@/lib/constants"
@@ -16,12 +17,11 @@ export function Map() {
 
   useEffect(() => {
     if (typeof window !== "undefined" && mapRef.current && !mapInstanceRef.current) {
-      // Fix for Leaflet icon issues
+
       delete (L.Icon.Default.prototype as any)._getIconUrl
       L.Icon.Default.mergeOptions({
-        iconRetinaUrl: "/leaflet/marker-icon-2x.png",
-        iconUrl: "/leaflet/marker-icon.png",
-        shadowUrl: "/leaflet/marker-shadow.png",
+        iconRetinaUrl: "/leaflet/icon.webp",
+        iconUrl: "/leaflet/icon.webp",
       })
 
       // Create map

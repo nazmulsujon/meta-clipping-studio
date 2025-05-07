@@ -6,7 +6,6 @@ import { footerContent, siteConfig, navItems } from "@/lib/constants"
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
 import dynamic from "next/dynamic"
 
-// Dynamically import the Map component with no SSR to avoid hydration issues
 const MapWithNoSSR = dynamic(() => import("@/components/map").then((mod) => mod.Map), {
   ssr: false,
 })
@@ -22,18 +21,6 @@ export function Footer() {
 
   return (
     <footer>
-      <div className="bg-gray-100 py-8">
-        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {navItems.map((item, index) => (
-            <div key={index} className="flex justify-center">
-              <Link href={item.href} className="text-gray-600 hover:text-blue-600 text-sm">
-                {item.label}
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div>
-
       <div className="bg-[#1e4976] text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -84,15 +71,20 @@ export function Footer() {
           </div>
 
           <div className="mt-8 pt-8 border-t border-blue-700 text-center">
-            <Image
+            {/* <Image
               src="/logo-white.png"
               alt={siteConfig.name}
               width={150}
               height={50}
               className="h-12 w-auto mx-auto mb-4"
-            />
+            /> */}
+            Meta Clipping Studio
             <p>
               &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+            </p>
+            <p className="mt-4">
+              Design and Developed by {" "}
+              <Link className="underline" href="https://digitalsolutions.ltd">Digitalsolutions.ltd</Link>
             </p>
           </div>
         </div>
