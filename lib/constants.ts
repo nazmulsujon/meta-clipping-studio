@@ -29,76 +29,76 @@ export const navItems = [
   { label: "HOME", href: "/" },
   {
     label: "SERVICES",
-    href: "/services",
+    href: "#",
     dropdown: true,
     items: [
       {
         label: "Real-Estate Photo Editing",
-        href: "/services/real-estate",
+        href: "#",
         icon: Camera,
       },
       {
         label: "Color Correction/Adjustment",
-        href: "/services/color-correction",
+        href: "#",
         icon: Palette,
       },
       {
         label: "eCommerce Editing Services",
-        href: "/services/ecommerce",
+        href: "#",
         icon: ShoppingCart,
       },
       {
         label: "Automotive",
-        href: "/services/automotive",
+        href: "#",
         icon: Car,
       },
       {
         label: "Masking",
-        href: "/services/masking",
+        href: "#",
         icon: Layers,
       },
       {
         label: "Only Edited",
-        href: "/services/only-edited",
+        href: "#",
         icon: CheckCircle,
       },
       {
         label: "Shadow & Reflection",
-        href: "/services/shadow-reflection",
+        href: "#",
         icon: Sparkles,
       },
       {
         label: "3D Modeling and Rendering Services",
-        href: "/services/3d-modeling",
+        href: "#",
         icon: Cube,
       },
       {
         label: "Photo Retouching/On-Model/Fashion etc.",
-        href: "/services/photo-retouching",
+        href: "#",
         icon: ImageIcon,
       },
       {
         label: "Ghost/3D Mannequin",
-        href: "/services/ghost-mannequin",
+        href: "#",
         icon: Ghost,
       },
       {
         label: "Clipping Path/Deep etching/Silo",
-        href: "/services/clipping-path",
+        href: "#",
         icon: Scissors,
       },
       {
         label: "Recoloring",
-        href: "/services/recoloring",
+        href: "#",
         icon: Paintbrush,
       },
     ],
   },
-  { label: "GALLERY", href: "/gallery" },
-  { label: "ABOUT US", href: "/about" },
-  { label: "PRICING", href: "/pricing" },
-  { label: "FREE TRIAL", href: "/free-trial" },
-  { label: "CONTACT US", href: "/contact" },
+  { label: "GALLERY", href: "#" },
+  { label: "ABOUT US", href: "#" },
+  { label: "PRICING", href: "#" },
+  { label: "FREE TRIAL", href: "#" },
+  { label: "CONTACT US", href: "#" },
 ];
 
 export const heroContent = [
@@ -128,31 +128,56 @@ export const aboutContent = {
   title: "ABOUT US",
   columns: [
     {
-      title: "ADVANCED INNOVATION BD",
+      title: "META CLIPPING STUDIO",
       items: [
-        "We are a professional photo editing company with a team of highly skilled photo editors.",
-        "We provide high-quality photo editing services at affordable prices.",
-        "Our team is dedicated to delivering exceptional results that exceed client expectations.",
+        "Team of 75 professional Image Editing designers & artists.",
+        "Ready to fulfill your requirements with high-end quality.",
+        "Renowned for Image Editing & Retouching services globally.",
       ],
     },
     {
-      title: "QUALITY & CONFIDENTIALITY",
+      title: "SECURITY & CONFIDENTIALITY",
       items: [
-        "100% quality assurance",
-        "Strict confidentiality",
-        "Secure file transfer",
-        "24/7 customer support",
-        "Fast turnaround time",
+        "100% secure handling of information and images.",
+        "No sharing without your informed consent.",
+        "We uphold the Personal Data Protection Act (PDPA).",
+        "Non-Disclosure Agreement (NDA) signed with clients.",
       ],
     },
     {
-      title: "SECURE, RELIABLE, TRANSPARENT",
+      title: "HIGH-END EDITING & RETOUCHING",
       items: [
-        "Secure payment methods",
-        "Reliable service delivery",
-        "Transparent pricing",
-        "No hidden charges",
-        "Money-back guarantee",
+        "Cost-effective clipping path service starting at $0.40 USD.",
+        "24/7 production facility including holidays.",
+        "Guaranteed service availability even during Christmas.",
+        "Reliable image editing solutions for outsourcing clients.",
+      ],
+    },
+    {
+      title: "OUR STORY",
+      items: [
+        "Meta Clipping Studio is a Multinational Firm.",
+        "Specializing in Image Editing, SEO Marketing, Video Production.",
+        "Also offers Web-Development and Online Marketing services.",
+        "Located in Dhaka, Bangladesh.",
+      ],
+    },
+    {
+      title: "ISO 9001:2015 CERTIFIED",
+      items: [
+        "Committed to quality management and continuous improvement.",
+        "Ensures consistent service delivery and customer satisfaction.",
+        "Adheres to international standards for quality assurance.",
+        "Regular audits to maintain certification status.",
+      ],
+    },
+    {
+      title: "OUR SERVICES",
+      items: [
+        "Clipping Path, Image Masking, Background Removal.",
+        "E-commerce Photo Editing, Shadow Creation, Color Correction.",
+        "Photo Retouching, Ghost Mannequin, Real Estate Photo Editing.",
+        "Raster To Vector Conversion.",
       ],
     },
   ],
@@ -164,7 +189,7 @@ export const aboutContent = {
   ],
   certification: {
     image: "/iso-cert.png",
-    text: "ISO 9001",
+    text: "ISO 9001:2015 Certified",
   },
 };
 
@@ -172,85 +197,86 @@ export const servicesContent = {
   title: "OUR SERVICES",
   services: [
     {
-      title: "Jewelry Photo Retouching",
+      title: "Clipping Path / Deep Etching / Silo",
       description:
-        "Professional jewelry retouching to make your products shine with perfect clarity and brilliance.",
+        "We cut out a 2D image using the Photoshop Pen Tool to deliver precise, clean, and professional outputs.",
       image: "/p-1.webp",
       link: "#",
     },
     {
-      title: "Ghost Mannequin/3D Services",
+      title: "Ghost Mannequin / 3D Mannequin",
       description:
-        "Create a 3D effect for your clothing items with our professional ghost mannequin service.",
+        "Combine multiple images to create a realistic invisible mannequin effect for apparel products.",
       image: "/p-2.jpg",
-      link: "#",
-    },
-    {
-      title: "Model Photo Editing",
-      description:
-        "Enhance your model photos with our professional editing services to create stunning visuals.",
-      image: "/p-3.jpg",
-    },
-    {
-      title: "Image Masking Services",
-      description:
-        "Perfect image masking for complex objects, hair, and transparent items.",
-      image: "/p-4.jpg",
-      link: "#",
-    },
-    {
-      title: "Product Photo Retouching",
-      description:
-        "Make your products look their best with our professional retouching services.",
-      image: "/p-1.webp",
-      link: "#",
-    },
-    {
-      title: "Portrait Retouching",
-      description:
-        "Enhance portraits while maintaining natural looks with our expert retouching.",
-      image: "/p-2.jpg",
-      link: "#",
-    },
-    {
-      title: "Fashion Photo Editing",
-      description:
-        "Create stunning fashion photos that stand out with our professional editing services.",
-      image: "/p-3.jpg",
-      link: "#",
-    },
-    {
-      title: "Color Correction Services",
-      description:
-        "Perfect colors for your product images to ensure consistency across your catalog.",
-      image: "/p-4.jpg",
       link: "#",
     },
     {
       title: "Real Estate Photo Editing",
       description:
-        "Enhance real estate photos to showcase properties in their best light.",
+        "Enhance property photos to attract buyers by adjusting lighting, color, and clarity for a professional look.",
+      image: "/p-3.jpg",
+      link: "#",
+    },
+    {
+      title: "3D Modeling and Rendering",
+      description:
+        "Perfect product visuals by removing flaws, fixing shape issues, and adding realistic textures and lighting.",
+      image: "/p-4.jpg",
+      link: "#",
+    },
+    {
+      title: "Photo Retouching / On-Model / Fashion",
+      description:
+        "Retouch fashion and on-model shots by removing blemishes, adjusting symmetry, and enhancing overall appearance.",
       image: "/p-1.webp",
       link: "#",
     },
     {
-      title: "Beauty Retouching",
+      title: "Recoloring",
       description:
-        "Professional beauty retouching for magazines, catalogs, and advertising.",
+        "Display all available product color variants efficiently through our expert recoloring workflow.",
+      image: "/p-2.jpg",
+      link: "#",
+    },
+    {
+      title: "Shadow & Reflection",
+      description:
+        "Maintain realism by preserving or adding natural shadows, drop shadows, and reflections to product images.",
+      image: "/p-3.jpg",
+      link: "#",
+    },
+    {
+      title: "eCommerce Editing Services",
+      description:
+        "High-quality image editing services tailored for eCommerce platforms to deliver pixel-perfect visuals.",
       image: "/p-4.jpg",
+      link: "#",
+    },
+    {
+      title: "Color Correction / Adjustment",
+      description:
+        "Ensure consistent and accurate color across your product catalog by fixing color values and tone mismatches.",
+      image: "/p-1.webp",
+      link: "#",
+    },
+    {
+      title: "Image Masking",
+      description:
+        "Advanced masking techniques to isolate subjects with complex edges like hair, fur, or fabrics.",
+      image: "/p-2.jpg",
       link: "#",
     },
     {
       title: "Automotive Editing",
       description:
-        "Specialized editing for automotive photography to showcase vehicles at their best.",
-      image: "/p-2.jpg",
+        "Expert editing for car images, including background removal, color correction, reflections, and detail enhancement.",
+      image: "/p-3.jpg",
       link: "#",
     },
     {
-      title: "Wedding Photo Editing",
+      title: "Only Edited",
       description:
-        "Make wedding memories even more special with our professional editing services.",
+        "Quick and clean edits using the Pen Tool to deliver ready-to-use product cutouts with no extra effects.",
       image: "/p-4.jpg",
       link: "#",
     },
@@ -313,39 +339,39 @@ export const blogsContent = {
   blogs: [
     {
       title:
-        "eCommerce Editing Services – Boost Your Sales with Professional Product Images",
-      category: "eCommerce",
+        "eCommerce Editing Services – Enhancing Product Images for Maximum Impact",
+      category: "Uncategorized",
       image: "/showcase/gallery2.jpg",
       link: "#",
     },
     {
-      title:
-        "Shadow & Reflection Effects – How to Create Them for Your Products",
-      category: "Techniques",
+      title: "Shadow & Reflection Effects: Making Images Look More Realistic",
+      category: "Uncategorized",
       image: "/showcase/gallery3.jpg",
       link: "#",
     },
     {
-      title: "Retouching Services – Enhancing Your Photos for Maximum Impact",
-      category: "Retouching",
+      title: "Recoloring Services: Transforming Images with Precision",
+      category: "Recoloring",
       image: "/showcase/gallery4.jpg",
       link: "#",
     },
     {
-      title: "Professional Photo Editing – Why It Matters for Your Brand",
-      category: "Branding",
+      title: "Photo Retouching for Fashion & On-Model Photography",
+      category: "Fashion",
       image: "/showcase/gallery2.jpg",
       link: "#",
     },
     {
-      title: "Fashion Photography Editing – Latest Trends and Techniques",
-      category: "Fashion",
+      title: "3D Modeling and Rendering Services by Advanced Innovation BD",
+      category: "3D Modeling and Rendering",
       image: "/showcase/gallery3.jpg",
       link: "#",
     },
     {
-      title: "Retail Success Stories – How Quality Images Increased Sales",
-      category: "Success Stories",
+      title:
+        "Real Estate Photo Editing: Transforming Property Images for Maximum Impact",
+      category: "Real-Estate Photo Editing",
       image: "/showcase/gallery4.jpg",
       link: "#",
     },
@@ -365,7 +391,7 @@ export const footerContent = {
   ],
   quickLinks: [
     { name: "HOME", url: "/" },
-    { name: "SERVICES", url: "/services" },
+    { name: "SERVICES", url: "" },
     { name: "GALLERY", url: "/gallery" },
     { name: "ABOUT US", url: "/about" },
     { name: "PRICING", url: "/pricing" },

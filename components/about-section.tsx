@@ -1,17 +1,19 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { aboutContent } from "@/lib/constants"
-import Image from "next/image"
-import { Laptop, Shield, LineChart } from "lucide-react"
+import { motion } from "framer-motion";
+import { aboutContent } from "@/lib/constants";
+import Image from "next/image";
+import { Laptop, Shield, LineChart, Globe, Award, Briefcase } from "lucide-react";
 
 export function AboutSection() {
-  // Icons for each card
   const cardIcons = [
     { icon: Laptop, color: "#1e4976" },
     { icon: Shield, color: "#1e4976" },
     { icon: LineChart, color: "#1e4976" },
-  ]
+    { icon: Globe, color: "#1e4976" },
+    { icon: Award, color: "#1e4976" },
+    { icon: Briefcase, color: "#1e4976" },
+  ];
 
   return (
     <section className="py-16 bg-gray-100">
@@ -26,10 +28,9 @@ export function AboutSection() {
           {aboutContent.title}
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 space-y-12 md:space-y-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-20">
           {aboutContent.columns.map((column, index) => {
-            const IconComponent = cardIcons[index].icon
-
+            const IconComponent = cardIcons[index % cardIcons.length].icon;
             return (
               <motion.div
                 key={index}
@@ -39,10 +40,9 @@ export function AboutSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                {/* Circle with icon */}
                 <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
-                  <div className="size-32 rounded-full bg-white flex items-center justify-center shadow-md">
-                    <IconComponent className="size-20" style={{ color: cardIcons[index].color }} />
+                  <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center shadow-md">
+                    <IconComponent className="w-12 h-12" style={{ color: cardIcons[index % cardIcons.length].color }} />
                   </div>
                 </div>
 
@@ -54,12 +54,8 @@ export function AboutSection() {
                     </li>
                   ))}
                 </ul>
-
-                <div className="mt-6 text-center">
-                  <button className="text-[#1e4976] font-medium hover:underline">VIEW DETAILS</button>
-                </div>
               </motion.div>
-            )
+            );
           })}
         </div>
 
@@ -102,10 +98,9 @@ export function AboutSection() {
               />
             </div>
             <span className="text-[#1e4976] font-bold">{aboutContent.certification.text}</span>
-            <button className="mt-2 bg-[#1e4976] text-white px-4 py-2 rounded-md text-sm">View More</button>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }

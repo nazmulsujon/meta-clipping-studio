@@ -55,7 +55,7 @@ export function HeroSection() {
               <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-white mb-6">{currentHero.title}</h1>
               <p className="text-xl md:text-2xl text-white mb-8">{currentHero.description}</p>
               <Button asChild size="lg" className="bg-[#1e4976] hover:bg-[#2c5282] text-white rounded-none px-8">
-                <Link href="/contact">{currentHero.buttonText}</Link>
+                <Link href="#">{currentHero.buttonText}</Link>
               </Button>
             </motion.div>
           </AnimatePresence>
