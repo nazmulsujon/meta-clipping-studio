@@ -29,7 +29,7 @@ export const navItems = [
   { label: "HOME", href: "/" },
   {
     label: "SERVICES",
-    href: "#",
+    href: "/#services",
     dropdown: true,
     items: [
       {
@@ -94,11 +94,11 @@ export const navItems = [
       },
     ],
   },
-  { label: "GALLERY", href: "#" },
-  { label: "ABOUT US", href: "#" },
-  { label: "PRICING", href: "#" },
-  { label: "FREE TRIAL", href: "#" },
-  { label: "CONTACT US", href: "#" },
+  { label: "GALLERY", href: "/#gallery" },
+  { label: "ABOUT US", href: "/#about" },
+  { label: "PRICING", href: "/#pricing" },
+  { label: "FREE TRIAL", href: "/#free-trial" },
+  { label: "CONTACT US", href: "/#contact" },
 ];
 
 export const heroContent = [

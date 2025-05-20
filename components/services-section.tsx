@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export function ServicesSection() {
   return (
-    <section className="py-16 bg-white">
+    <section id="services" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-5xl font-bold text-center mb-12 text-gray-600"

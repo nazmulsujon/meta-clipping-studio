@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export function BlogsSection() {
   return (
-    <section className="py-16 bg-[#e8b4b8]/30">
+    <section id="blogs" className="py-16 bg-[#e8b4b8]/30">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-5xl font-bold text-center mb-12 text-gray-600"

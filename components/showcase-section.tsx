@@ -73,7 +73,7 @@ export default function ShowcaseSection() {
   }, [open]);
 
   return (
-    <section className="py-16 bg-white relative">
+    <section id='gallery' className="py-16 bg-white relative">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-5xl font-bold text-center mb-12 text-gray-600"

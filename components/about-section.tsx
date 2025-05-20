@@ -16,7 +16,7 @@ export function AboutSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section id="about" className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-5xl font-bold text-center mb-20 text-gray-600"
