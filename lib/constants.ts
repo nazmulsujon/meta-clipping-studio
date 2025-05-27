@@ -34,69 +34,69 @@ export const navItems = [
     items: [
       {
         label: "Real-Estate Photo Editing",
-        href: "#",
+        href: "real-estate-editing",
         icon: Camera,
       },
       {
         label: "Color Correction/Adjustment",
-        href: "#",
+        href: "color-correction",
         icon: Palette,
       },
       {
         label: "eCommerce Editing Services",
-        href: "#",
+        href: "ecommerce-editing",
         icon: ShoppingCart,
       },
       {
         label: "Automotive",
-        href: "#",
+        href: "automotive-editing",
         icon: Car,
       },
       {
         label: "Masking",
-        href: "#",
+        href: "masking",
         icon: Layers,
       },
       {
         label: "Only Edited",
-        href: "#",
+        href: "only-edited",
         icon: CheckCircle,
       },
       {
         label: "Shadow & Reflection",
-        href: "#",
+        href: "shadow-reflection",
         icon: Sparkles,
       },
       {
         label: "3D Modeling and Rendering Services",
-        href: "#",
+        href: "3d-modeling-rendering",
         icon: Cube,
       },
       {
         label: "Photo Retouching/On-Model/Fashion etc.",
-        href: "#",
+        href: "photo-retouching",
         icon: ImageIcon,
       },
       {
         label: "Ghost/3D Mannequin",
-        href: "#",
+        href: "ghost-mannequin",
         icon: Ghost,
       },
       {
         label: "Clipping Path/Deep etching/Silo",
-        href: "#",
+        href: "clipping-path",
         icon: Scissors,
       },
       {
         label: "Recoloring",
-        href: "#",
+        href: "recoloring",
         icon: Paintbrush,
       },
     ],
   },
   { label: "GALLERY", href: "/#gallery" },
   { label: "ABOUT US", href: "/#about" },
-  { label: "PRICING", href: "/#pricing" },
+  { label: "PRICING", href: "/pricing" },
   { label: "FREE TRIAL", href: "/#free-trial" },
   { label: "CONTACT US", href: "/#contact" },
 ];
@@ -120,6 +120,12 @@ export const heroContent = [
     description:
       "We help retailers create high-performing visual content for their products.",
     image: "/Banner-1.webp",
+    buttonText: "GET IN TOUCH",
+  },
+  {
+    title: "Visual Content for eCommerce",
+    description: "Where little touches of excellence makes the difference",
+    image: "/Banner-3.webp",
     buttonText: "GET IN TOUCH",
   },
 ];
@@ -202,6 +208,7 @@ export const servicesContent = {
         "We cut out a 2D image using the Photoshop Pen Tool to deliver precise, clean, and professional outputs.",
       image: "/p-1.webp",
       link: "#",
+      content: "",
     },
     {
       title: "Ghost Mannequin / 3D Mannequin",
@@ -209,6 +216,7 @@ export const servicesContent = {
         "Combine multiple images to create a realistic invisible mannequin effect for apparel products.",
       image: "/p-2.jpg",
       link: "#",
+      content: "",
     },
     {
       title: "Real Estate Photo Editing",
@@ -216,6 +224,7 @@ export const servicesContent = {
         "Enhance property photos to attract buyers by adjusting lighting, color, and clarity for a professional look.",
       image: "/p-3.jpg",
       link: "#",
+      content: "",
     },
     {
       title: "3D Modeling and Rendering",
@@ -223,6 +232,7 @@ export const servicesContent = {
         "Perfect product visuals by removing flaws, fixing shape issues, and adding realistic textures and lighting.",
       image: "/p-4.jpg",
       link: "#",
+      content: "",
     },
     {
       title: "Photo Retouching / On-Model / Fashion",
@@ -230,6 +240,7 @@ export const servicesContent = {
         "Retouch fashion and on-model shots by removing blemishes, adjusting symmetry, and enhancing overall appearance.",
       image: "/p-1.webp",
       link: "#",
+      content: "",
     },
     {
       title: "Recoloring",
@@ -237,6 +248,7 @@ export const servicesContent = {
         "Display all available product color variants efficiently through our expert recoloring workflow.",
       image: "/p-2.jpg",
       link: "#",
+      content: "",
     },
     {
       title: "Shadow & Reflection",
@@ -244,6 +256,7 @@ export const servicesContent = {
         "Maintain realism by preserving or adding natural shadows, drop shadows, and reflections to product images.",
       image: "/p-3.jpg",
       link: "#",
+      content: "",
     },
     {
       title: "eCommerce Editing Services",
@@ -251,6 +264,7 @@ export const servicesContent = {
         "High-quality image editing services tailored for eCommerce platforms to deliver pixel-perfect visuals.",
       image: "/p-4.jpg",
       link: "#",
+      content: "",
     },
     {
       title: "Color Correction / Adjustment",
@@ -258,6 +272,7 @@ export const servicesContent = {
         "Ensure consistent and accurate color across your product catalog by fixing color values and tone mismatches.",
       image: "/p-1.webp",
       link: "#",
+      content: "",
     },
     {
       title: "Image Masking",
@@ -265,6 +280,7 @@ export const servicesContent = {
         "Advanced masking techniques to isolate subjects with complex edges like hair, fur, or fabrics.",
       image: "/p-2.jpg",
       link: "#",
+      content: "",
     },
     {
       title: "Automotive Editing",
@@ -272,6 +288,7 @@ export const servicesContent = {
         "Expert editing for car images, including background removal, color correction, reflections, and detail enhancement.",
       image: "/p-3.jpg",
       link: "#",
+      content: "",
     },
     {
       title: "Only Edited",
@@ -279,9 +296,409 @@ export const servicesContent = {
         "Quick and clean edits using the Pen Tool to deliver ready-to-use product cutouts with no extra effects.",
       image: "/p-4.jpg",
       link: "#",
+      content: "",
     },
   ],
 };
+
+export const servicesDetailsData = [
+  {
+    title: "Real-Estate Photo Editing",
+    slug: "real-estate-editing",
+    description:
+      "Real estate photo editing service is critical when it’s time to attract its buyer like all other product photos. We make it look perfect.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "Color Correction/Adjustment",
+    slug: "color-correction",
+    description:
+      "Enhance the visual appeal of your images by adjusting tones, brightness, contrast, and white balance.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "eCommerce Editing Services",
+    slug: "ecommerce-editing",
+    description:
+      "Professional editing for product images that convert more customers and align with platform guidelines.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "Automotive",
+    slug: "automotive-editing",
+    description:
+      "High-end automotive retouching services to make your vehicle images more captivating and dynamic.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "Masking",
+    slug: "masking",
+    description:
+      "Professional image masking service to remove complex backgrounds and isolate objects with precision.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "Only Edited",
+    slug: "only-edited",
+    description:
+      "Receive only the edited version of your submitted images, fine-tuned to your specifications.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "Shadow & Reflection",
+    slug: "shadow-reflection",
+    description:
+      "Create natural-looking shadows and reflections to make your products look grounded and realistic.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "3D Modeling and Rendering Services",
+    slug: "3d-modeling-rendering",
+    description:
+      "Build photorealistic 3D models and renders that help visualize your products before production.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "Photo Retouching/On-Model/Fashion etc.",
+    slug: "photo-retouching",
+    description:
+      "High-end fashion and model photo retouching that enhances beauty and corrects imperfections.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "Ghost/3D Mannequin",
+    slug: "ghost-mannequin",
+    description:
+      "Combine several images of a garment to create an invisible mannequin look.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "Clipping Path/Deep etching/Silo",
+    slug: "clipping-path",
+    description:
+      "Precise clipping path services to remove backgrounds and highlight your subjects with clean edges.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+  {
+    title: "Recoloring",
+    slug: "recoloring",
+    description:
+      "Recolor your product photos to offer variety or match your branding without reshooting.",
+    bannerImages: ["/p-1.webp", "/p-2.jpg", "/p-3.jpg", "/p-1.webp"],
+    images: [
+      { id: "image-1", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      { id: "image-2", src: "/showcase/gallery3.jpg", alt: "Showcase image 2" },
+      { id: "image-3", src: "/showcase/gallery4.jpg", alt: "Showcase image 3" },
+      { id: "image-4", src: "/showcase/gallery2.jpg", alt: "Showcase image 4" },
+      { id: "image-5", src: "/showcase/gallery3.jpg", alt: "Showcase image 1" },
+      { id: "image-6", src: "/showcase/gallery4.jpg", alt: "Showcase image 2" },
+      { id: "image-7", src: "/showcase/gallery2.jpg", alt: "Showcase image 3" },
+      { id: "image-8", src: "/showcase/gallery3.jpg", alt: "Showcase image 4" },
+      { id: "image-9", src: "/showcase/gallery2.jpg", alt: "Showcase image 1" },
+      {
+        id: "image-10",
+        src: "/showcase/gallery3.jpg",
+        alt: "Showcase image 2",
+      },
+      {
+        id: "image-11",
+        src: "/showcase/gallery4.jpg",
+        alt: "Showcase image 3",
+      },
+      {
+        id: "image-12",
+        src: "/showcase/gallery2.jpg",
+        alt: "Showcase image 4",
+      },
+    ],
+  },
+];
 
 export const clientsContent = {
   title: "VALUABLE CLIENTS",
@@ -340,43 +757,246 @@ export const blogsContent = {
     {
       title:
         "eCommerce Editing Services – Enhancing Product Images for Maximum Impact",
-      category: "Uncategorized",
+      description:
+        "Introduction In today’s digital marketplace, high-quality product images play a crucial role in attracting customers and driving sales. eCommerce businesses",
+      category: "eCommerce Editing",
       image: "/showcase/gallery2.jpg",
       link: "#",
+      content: `
+        <h2>Introduction</h2>
+        <p>In today’s digital marketplace, high-quality product images play a crucial role in attracting customers and driving sales. eCommerce businesses rely on professional image editing services to make their products stand out. Advanced Innovation BD provides top-tier eCommerce image editing services to ensure your products look professional, consistent, and appealing to potential buyers.</p>
+
+        <h3>Key eCommerce Image Editing Services</h3>
+        <ul>
+          <li><strong>1. Clipping Path & Background Removal</strong><br/>
+          Ensures a clean and distraction-free product image. Ideal for platforms like Amazon, eBay, and Shopify.</li>
+
+          <li><strong>2. Image Retouching & Enhancement</strong><br/>
+          Includes color correction, blemish removal, and lighting adjustments for a polished look.</li>
+
+          <li><strong>3. Ghost Mannequin & Neck Joint Services</strong><br/>
+          Display clothing in a 3D-like appearance without mannequins.</li>
+
+          <li><strong>4. Shadow & Reflection Effects</strong><br/>
+          Adds natural depth and professionalism through shadows and reflections.</li>
+
+          <li><strong>5. Color Correction & Color Variants</strong><br/>
+          Creates consistent and accurate color options for products.</li>
+
+          <li><strong>6. Product Image Resizing & Optimization</strong><br/>
+          Optimizes image sizes for fast-loading websites while maintaining quality.</li>
+        </ul>
+
+        <h3>Why Choose Advanced Innovation BD?</h3>
+        <ul>
+          <li>✅ High-Quality Edits</li>
+          <li>✅ Fast Turnaround Time</li>
+          <li>✅ Affordable Pricing</li>
+          <li>✅ Bulk Editing Support</li>
+        </ul>
+
+        <p><strong>Get Started Today!</strong><br/>
+        Transform your product images with professional eCommerce editing services from Advanced Innovation BD. Contact us today to get a free quote and take your online store to the next level! 🚀</p>
+      `,
     },
     {
       title: "Shadow & Reflection Effects: Making Images Look More Realistic",
+      description:
+        "Introduction In the competitive world of digital marketing, e-commerce, and professional photography, high-quality images play a crucial role in attracting",
       category: "Uncategorized",
       image: "/showcase/gallery3.jpg",
       link: "#",
+      content: `
+        <h2>Introduction</h2>
+        <p>In the competitive world of digital marketing, e-commerce, and professional photography, high-quality images play a crucial role in attracting customers. One of the most effective ways to enhance product images and make them look more appealing is by adding shadow and reflection effects. These techniques help in creating a natural, professional, and realistic look for product images, making them stand out.</p>
+
+        <p>At Advanced Innovation BD, we specialize in providing high-quality shadow and reflection effects to ensure your images appear more engaging, polished, and professional.</p>
+
+        <h3>Why Are Shadows and Reflections Important?</h3>
+        <ul>
+          <li>Create depth and realism</li>
+          <li>Improve product presentation</li>
+          <li>Enhance branding and marketing visuals</li>
+        </ul>
+
+        <h3>Types of Shadow Effects</h3>
+        <ul>
+          <li><strong>Drop Shadow:</strong> Creates a floating effect. Best for apparel and electronics.</li>
+          <li><strong>Natural Shadow:</strong> Simulates real-world lighting. Best for shoes and furniture.</li>
+          <li><strong>Floating Shadow:</strong> Gives elevation and depth. Best for tech gadgets and books.</li>
+          <li><strong>Reflection Shadow (Mirror Effect):</strong> Adds a glass-like reflection. Best for jewelry and luxury products.</li>
+        </ul>
+
+        <h3>How We Do It</h3>
+        <ol>
+          <li>Analyze the Image</li>
+          <li>Manual Shadow Creation</li>
+          <li>Blending & Refinement</li>
+          <li>Final Touches</li>
+        </ol>
+
+        <h3>Benefits</h3>
+        <ul>
+          <li>✔ Enhances product appeal</li>
+          <li>✔ Increases brand credibility</li>
+          <li>✔ Improves sales conversion</li>
+        </ul>
+
+        <h3>Why Choose Us?</h3>
+        <ul>
+          <li>🔹 Experienced Editors</li>
+          <li>🔹 High-Quality Output</li>
+          <li>🔹 Fast Turnaround</li>
+          <li>🔹 Affordable Rates</li>
+        </ul>
+
+        <p><strong>Get Started Today!</strong> Contact Advanced Innovation BD for a free trial or consultation.</p>
+      `,
     },
     {
       title: "Recoloring Services: Transforming Images with Precision",
+      description:
+        "What is Image Recoloring? Image recoloring is the process of changing or adjusting the colors of an image to enhance",
       category: "Recoloring",
       image: "/showcase/gallery4.jpg",
       link: "#",
+      content: `
+        <h2>What is Image Recoloring?</h2>
+        <p>Image recoloring is the process of changing or adjusting the colors of an image to enhance its visual appeal or meet specific branding requirements. This service is widely used in e-commerce, fashion, advertising, and product photography to create multiple color variations without reshooting the product.</p>
+
+        <h3>Why is Image Recoloring Important?</h3>
+        <ul>
+          <li>Ensures branding consistency</li>
+          <li>Reduces the need for multiple photoshoots</li>
+          <li>Enhances product display</li>
+          <li>Enables easy presentation of color variants</li>
+        </ul>
+
+        <h3>Industries That Benefit</h3>
+        <ul>
+          <li>E-commerce & Retail</li>
+          <li>Fashion & Apparel</li>
+          <li>Automobile & Manufacturing</li>
+          <li>Marketing & Advertising</li>
+        </ul>
+
+        <h3>Types of Recoloring Services</h3>
+        <ul>
+          <li><strong>Product Recoloring:</strong> Showcase different color options</li>
+          <li><strong>Fashion & Apparel Recoloring:</strong> Display clothing and accessories in multiple shades</li>
+          <li><strong>Skin Tone & Makeup Recoloring:</strong> Demonstrate various makeup tones on models</li>
+          <li><strong>Artwork & More:</strong> Custom recoloring to fit creative needs</li>
+        </ul>
+
+        <p><strong>Ready to Transform Your Images?</strong><br/>
+        Contact Advanced Innovation BD today and discover how our recoloring services can improve your visual content!</p>
+      `,
     },
     {
       title: "Photo Retouching for Fashion & On-Model Photography",
+      description:
+        "Elevate Your Fashion Photography with Professional Retouching In the fashion industry, high-quality images are essential to captivate audiences and showcase",
       category: "Fashion",
       image: "/showcase/gallery2.jpg",
       link: "#",
+      content: "",
     },
     {
       title: "3D Modeling and Rendering Services by Advanced Innovation BD",
+      description:
+        "Introduction to 3D Modeling and Rendering In today’s digital world, 3D modeling and rendering have become essential for industries like",
       category: "3D Modeling and Rendering",
       image: "/showcase/gallery3.jpg",
       link: "#",
+      content: "",
     },
     {
       title:
         "Real Estate Photo Editing: Transforming Property Images for Maximum Impact",
+      description:
+        "Introduction In the competitive real estate market, high-quality images play a crucial role in attracting buyers and closing deals faster.",
       category: "Real-Estate Photo Editing",
       image: "/showcase/gallery4.jpg",
       link: "#",
+      content: "",
     },
   ],
 };
+
+export const pricingData = [
+  {
+    id: 1,
+    name: "Clipping Path",
+    price: "$0.40 USD per image",
+    image: "/p-1.webp",
+  },
+  {
+    id: 2,
+    name: "Background Removal",
+    price: "$0.50 USD per image",
+    image: "/p-2.jpg",
+  },
+  {
+    id: 3,
+    name: "Multi-Path",
+    price: "$1.50 USD per image",
+    image: "/p-3.jpg",
+  },
+  {
+    id: 4,
+    name: "Image Retouching",
+    price: "$1.50 USD per image",
+    image: "/p-1.webp",
+  },
+  {
+    id: 5,
+    name: "Shadow Creation",
+    price: "$0.50 USD per image",
+    image: "/p-2.jpg",
+  },
+  {
+    id: 6,
+    name: "Reflection Creation",
+    price: "$0.50 USD per image",
+    image: "/p-2.jpg",
+  },
+  {
+    id: 7,
+    name: "Color Correction",
+    price: "$0.50 USD per image",
+    image: "/p-3.jpg",
+  },
+  {
+    id: 8,
+    name: "Image Masking",
+    price: "$1.00 USD per image",
+    image: "/p-1.webp",
+  },
+  {
+    id: 9,
+    name: "Ghost Mannequin",
+    price: "$1.20 USD per image",
+    image: "/p-2.jpg",
+  },
+  {
+    id: 10,
+    name: "Automotive (Vehicles)",
+    price: "$0.60 USD per image",
+    image: "/p-1.webp",
+  },
+  {
+    id: 11,
+    name: "Image Manipulation (based on complexity level)",
+    price: "$5.00+ USD per image",
+    image: "/p-3.jpg",
+  },
+  {
+    id: 12,
+    name: "Raster to Vector Conversion",
+    price: "$5.00+ USD per image",
+    image: "/p-2.jpg",
+  },
+];
 
 export const footerContent = {
   address: "123 Editing Street, Design City, 12345",

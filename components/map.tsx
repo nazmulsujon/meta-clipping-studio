@@ -52,5 +52,5 @@ export function Map() {
     }
   }, [])
 
-  return <div ref={mapRef} className="h-full min-h-[300px] w-full rounded-md" />
+  return <div ref={mapRef} className="h-full min-h-[300px] w-full rounded-md z-40" />
 }

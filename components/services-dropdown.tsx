@@ -54,7 +54,7 @@ export function ServicesDropdown({ item }: ServicesDropdownProps) {
                     transition={{ duration: 0.2, delay: idx * 0.02 }}
                   >
                     <Link
-                      href={subItem.href}
+                      href={`/services/${subItem.href}`}
                       className="flex items-center px-4 py-3 text-white hover:bg-[#3a6d99] w-full transition-colors"
                     >
                       {subItem.icon && <subItem.icon className="mr-2 h-4 w-4" />}

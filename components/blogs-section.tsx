@@ -29,7 +29,7 @@ export function BlogsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="relative h-48">
+              <div className="relative h-72">
                 <Image
                   src={blog.image || `/placeholder.svg?height=192&width=384&text=Blog${index + 1}`}
                   alt={blog.title}
@@ -40,6 +40,7 @@ export function BlogsSection() {
               </div>
               <div className="p-4 flex-grow">
                 <h3 className="text-lg font-semibold mb-4">{blog.title}</h3>
+                <p>{blog.description}</p>
               </div>
               <div className="p-4 pt-0 mt-auto">
                 <Link

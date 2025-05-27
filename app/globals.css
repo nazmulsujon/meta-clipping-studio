@@ -67,20 +67,34 @@
   h2.section-title {
     @apply text-4xl text-center mb-12;
   }
-}
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.section-title {
-  position: relative;
-  display: inline-block;
-}
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
 
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background-color: #3b82f6;
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .section-title {
+    position: relative;
+    display: inline-block;
+  }
+
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #3b82f6;
+  }
 }

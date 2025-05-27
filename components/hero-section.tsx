@@ -1,77 +1,63 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { motion, AnimatePresence } from "framer-motion"
 import { heroContent } from "@/lib/constants"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import Link from "next/link"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { EffectCoverflow, Pagination } from "swiper/modules"
+
+import "swiper/css"
+import "swiper/css/effect-coverflow"
+import "swiper/css/pagination"
 
 export function HeroSection() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % heroContent.length)
-    }, 5000)
-
-    return () => clearInterval(interval)
-  }, [])
-
-  const currentHero = heroContent[currentIndex]
-
   return (
-    <section className="relative h-screen w-full overflow-hidden pt-20">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentIndex}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
-          className="absolute inset-0"
-        >
-          <div className="absolute inset-0 bg-[#e8b4b8]/30 z-10" />
-          <Image
-            src={currentHero.image || "/placeholder.svg?height=1080&width=1920"}
-            alt="Hero background"
-            fill
-            className="object-fill"
-            priority
-          />
-        </motion.div>
-      </AnimatePresence>
-
-      <div className="container mx-auto px-4 h-full flex items-center relative z-20">
-        <div className="max-w-5xl">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentIndex}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-white mb-6">{currentHero.title}</h1>
-              <p className="text-xl md:text-2xl text-white mb-8">{currentHero.description}</p>
-              <Button asChild size="lg" className="bg-[#1e4976] hover:bg-[#2c5282] text-white rounded-none px-8">
-                <Link href="#">{currentHero.buttonText}</Link>
+    <section className="relative w-full pt-20 pb-10 mt-8">
+      <Swiper
+        effect="coverflow"
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView="auto"
+        pagination={{ clickable: true }}
+        spaceBetween={100}
+        coverflowEffect={{
+          rotate: 30,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        loop={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="h-[80vh]"
+      >
+        {heroContent.map((hero, index) => (
+          <SwiperSlide
+            key={index}
+            className="!w-[300px] md:!w-[800px] relative rounded-[2px] overflow-hidden shadow-lg"
+          >
+            <Image
+              src={hero.image || "/placeholder.svg?height=600&width=800"}
+              alt={hero.title}
+              fill
+              className="object-cover z-0"
+            />
+            <div className="absolute inset-0 bg-black/40 z-10" />
+            <div className="absolute inset-0 z-20 flex flex-col justify-center items-center p-6 text-center text-white">
+              <h2 className="text-3xl md:text-5xl font-bold mb-4">{hero.title}</h2>
+              <p className="text-lg md:text-xl mb-6">{hero.description}</p>
+              <Button
+                asChild
+                size="lg"
+                className="bg-[#1e4976] hover:bg-[#2c5282] text-white rounded-none px-8"
+              >
+                <Link href="#">{hero.buttonText}</Link>
               </Button>
-            </motion.div>
-          </AnimatePresence>
-        </div>
-      </div>
-
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
-        {heroContent.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrentIndex(idx)}
-            className={`w-3 h-3 rounded-full ${idx === currentIndex ? "bg-white" : "bg-white/50"}`}
-            aria-label={`Go to slide ${idx + 1}`}
-          />
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   )
 }

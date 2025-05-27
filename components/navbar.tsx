@@ -89,7 +89,7 @@ export function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="fixed top-20 inset-0 z-40 bg-[#1e4976] p-6 flex flex-col gap-4 md:hidden"
+            className="fixed top-20 inset-0 !z-50 bg-[#1e4976] p-6 flex flex-col gap-4 md:hidden"
           >
             {navItems.map((item, index) => (
               <div key={index}>
@@ -118,7 +118,7 @@ export function Navbar() {
                           {item.items?.map((subItem, idx) => (
                             <Link
                               key={idx}
-                              href={subItem.href}
+                              href={`/services/${subItem.href}`}
                               onClick={() => setIsMobileMenuOpen(false)}
                               className="block text-white text-sm hover:text-blue-200"
                             >
