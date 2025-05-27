@@ -23,13 +23,13 @@ export function BlogsSection() {
           {blogsContent.blogs.map((blog, index) => (
             <motion.div
               key={index}
-              className="bg-white overflow-hidden flex flex-col border border-gray-200"
+              className="bg-white overflow-hidden flex flex-col border border-gray-200 group"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="relative h-72">
+              <Link href={`/blogs/${blog.slug}`} className="relative h-72">
                 <Image
                   src={blog.image || `/placeholder.svg?height=192&width=384&text=Blog${index + 1}`}
                   alt={blog.title}
@@ -37,14 +37,16 @@ export function BlogsSection() {
                   className="object-cover"
                 />
                 <div className="absolute top-2 right-2 bg-[#1e4976] text-white text-xs px-2 py-1">{blog.category}</div>
-              </div>
+              </Link>
               <div className="p-4 flex-grow">
-                <h3 className="text-lg font-semibold mb-4">{blog.title}</h3>
+                <Link href={`/blogs/${blog.slug}`} className="group-hover:text-blue-500 transition-colors">
+                  <h3 className="text-lg font-semibold mb-4">{blog.title}</h3>
+                </Link>
                 <p>{blog.description}</p>
               </div>
               <div className="p-4 pt-0 mt-auto">
                 <Link
-                  href={blog.link}
+                  href={`/blogs/${blog.slug}`}
                   className="block text-center bg-[#1e4976] text-white py-2 px-4 text-sm hover:bg-[#2c5282] transition-colors"
                 >
                   READ MORE

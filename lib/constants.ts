@@ -207,7 +207,7 @@ export const servicesContent = {
       description:
         "We cut out a 2D image using the Photoshop Pen Tool to deliver precise, clean, and professional outputs.",
       image: "/p-1.webp",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -215,7 +215,7 @@ export const servicesContent = {
       description:
         "Combine multiple images to create a realistic invisible mannequin effect for apparel products.",
       image: "/p-2.jpg",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -223,7 +223,7 @@ export const servicesContent = {
       description:
         "Enhance property photos to attract buyers by adjusting lighting, color, and clarity for a professional look.",
       image: "/p-3.jpg",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -231,7 +231,7 @@ export const servicesContent = {
       description:
         "Perfect product visuals by removing flaws, fixing shape issues, and adding realistic textures and lighting.",
       image: "/p-4.jpg",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -239,7 +239,7 @@ export const servicesContent = {
       description:
         "Retouch fashion and on-model shots by removing blemishes, adjusting symmetry, and enhancing overall appearance.",
       image: "/p-1.webp",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -247,7 +247,7 @@ export const servicesContent = {
       description:
         "Display all available product color variants efficiently through our expert recoloring workflow.",
       image: "/p-2.jpg",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -255,7 +255,7 @@ export const servicesContent = {
       description:
         "Maintain realism by preserving or adding natural shadows, drop shadows, and reflections to product images.",
       image: "/p-3.jpg",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -263,7 +263,7 @@ export const servicesContent = {
       description:
         "High-quality image editing services tailored for eCommerce platforms to deliver pixel-perfect visuals.",
       image: "/p-4.jpg",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -271,7 +271,7 @@ export const servicesContent = {
       description:
         "Ensure consistent and accurate color across your product catalog by fixing color values and tone mismatches.",
       image: "/p-1.webp",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -279,7 +279,7 @@ export const servicesContent = {
       description:
         "Advanced masking techniques to isolate subjects with complex edges like hair, fur, or fabrics.",
       image: "/p-2.jpg",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -287,7 +287,7 @@ export const servicesContent = {
       description:
         "Expert editing for car images, including background removal, color correction, reflections, and detail enhancement.",
       image: "/p-3.jpg",
-      link: "#",
+      slug: "#",
       content: "",
     },
     {
@@ -295,7 +295,7 @@ export const servicesContent = {
       description:
         "Quick and clean edits using the Pen Tool to deliver ready-to-use product cutouts with no extra effects.",
       image: "/p-4.jpg",
-      link: "#",
+      slug: "#",
       content: "",
     },
   ],
@@ -760,8 +760,8 @@ export const blogsContent = {
       description:
         "Introduction In today’s digital marketplace, high-quality product images play a crucial role in attracting customers and driving sales. eCommerce businesses",
       category: "eCommerce Editing",
-      image: "/showcase/gallery2.jpg",
-      link: "#",
+      image: "/blogs/b-1.jpg",
+      slug: "ecommerce-editing-services",
       content: `
         <h2>Introduction</h2>
         <p>In today’s digital marketplace, high-quality product images play a crucial role in attracting customers and driving sales. eCommerce businesses rely on professional image editing services to make their products stand out. Advanced Innovation BD provides top-tier eCommerce image editing services to ensure your products look professional, consistent, and appealing to potential buyers.</p>
@@ -804,8 +804,8 @@ export const blogsContent = {
       description:
         "Introduction In the competitive world of digital marketing, e-commerce, and professional photography, high-quality images play a crucial role in attracting",
       category: "Uncategorized",
-      image: "/showcase/gallery3.jpg",
-      link: "#",
+      image: "/blogs/b-2.webp",
+      slug: "shadow-reflection-effects",
       content: `
         <h2>Introduction</h2>
         <p>In the competitive world of digital marketing, e-commerce, and professional photography, high-quality images play a crucial role in attracting customers. One of the most effective ways to enhance product images and make them look more appealing is by adding shadow and reflection effects. These techniques help in creating a natural, professional, and realistic look for product images, making them stand out.</p>
@@ -858,8 +858,8 @@ export const blogsContent = {
       description:
         "What is Image Recoloring? Image recoloring is the process of changing or adjusting the colors of an image to enhance",
       category: "Recoloring",
-      image: "/showcase/gallery4.jpg",
-      link: "#",
+      image: "/blogs/b-3.jpg",
+      slug: "recoloring-services",
       content: `
         <h2>What is Image Recoloring?</h2>
         <p>Image recoloring is the process of changing or adjusting the colors of an image to enhance its visual appeal or meet specific branding requirements. This service is widely used in e-commerce, fashion, advertising, and product photography to create multiple color variations without reshooting the product.</p>
@@ -895,30 +895,107 @@ export const blogsContent = {
     {
       title: "Photo Retouching for Fashion & On-Model Photography",
       description:
-        "Elevate Your Fashion Photography with Professional Retouching In the fashion industry, high-quality images are essential to captivate audiences and showcase",
-      category: "Fashion",
-      image: "/showcase/gallery2.jpg",
-      link: "#",
-      content: "",
+        "Elevate your fashion visuals with expert retouching services by Meta Clipping Studio. We enhance model photography for brands, photographers, and e-commerce.",
+      category: "Fashion Retouching",
+      image: "/blogs/b-4.jpg",
+      slug: "fashion-photo-retouching",
+      content: `
+        <h2>Elevate Your Fashion Photography with Professional Retouching</h2>
+        <p>In the fashion industry, captivating visuals are key to showcasing clothing, accessories, and models. At Meta Clipping Studio, we provide premium photo retouching services tailored for fashion brands, photographers, and online retailers.</p>
+
+        <h3>Key Aspects of Fashion Photo Retouching</h3>
+        <ul>
+          <li><strong>Skin Retouching & Beauty Enhancement:</strong> Natural skin smoothening, blemish removal, digital makeup, and facial feature enhancement.</li>
+          <li><strong>Clothing Retouching:</strong> Remove wrinkles and enhance textures and colors for a polished look.</li>
+          <li><strong>On-Model Adjustments:</strong> Subtle body correction, posture refinement, and lighting enhancement.</li>
+          <li><strong>Color Grading:</strong> Professional exposure, tone, and white balance correction for consistent branding.</li>
+          <li><strong>Background Enhancements:</strong> Remove distractions, clean backgrounds, and add depth.</li>
+          <li><strong>High-End Retouching:</strong> Magazine-quality edits using frequency separation and dodge & burn techniques.</li>
+        </ul>
+
+        <h3>Why Choose Meta Clipping Studio?</h3>
+        <ul>
+          <li>✔ Experienced Retouchers in Fashion and Editorial Work</li>
+          <li>✔ Natural, Realistic Results</li>
+          <li>✔ Fast Turnaround for Tight Deadlines</li>
+          <li>✔ Custom Retouching Tailored to Your Brand</li>
+        </ul>
+
+        <p><strong>Contact Meta Clipping Studio</strong> today to enhance your fashion imagery with professional and precise retouching services.</p>
+      `,
     },
     {
-      title: "3D Modeling and Rendering Services by Advanced Innovation BD",
+      title: "3D Modeling and Rendering Services",
       description:
-        "Introduction to 3D Modeling and Rendering In today’s digital world, 3D modeling and rendering have become essential for industries like",
-      category: "3D Modeling and Rendering",
-      image: "/showcase/gallery3.jpg",
-      link: "#",
-      content: "",
+        "Meta Clipping Studio offers high-quality 3D modeling and photorealistic rendering for products, architecture, and animations across industries.",
+      category: "3D Design",
+      image: "/blogs/b-5.jpg",
+      slug: "3d-modeling-rendering-services",
+      content: `
+        <h2>Introduction to 3D Modeling and Rendering</h2>
+        <p>Meta Clipping Studio provides expert 3D modeling and rendering solutions for diverse industries including architecture, gaming, and e-commerce. Our creative team crafts accurate, high-quality visuals to bring your concepts to life.</p>
+
+        <h3>3D Modeling Services</h3>
+        <ul>
+          <li>Product Models – Showcase items with precision in e-commerce and advertising.</li>
+          <li>Architectural Models – Realistic interior and exterior modeling for real estate and design projects.</li>
+          <li>Character Models – Custom designs for gaming, branding, and animation.</li>
+          <li>Industrial Models – Prototyping and machinery visualization for engineering and manufacturing.</li>
+        </ul>
+
+        <h3>3D Rendering Services</h3>
+        <ul>
+          <li>Product Rendering – Lifelike images for marketing and e-stores.</li>
+          <li>Architectural Rendering – Photorealistic visuals of homes, buildings, and layouts.</li>
+          <li>Animated Rendering – 3D walkthroughs and motion visuals.</li>
+        </ul>
+
+        <h3>Industries We Serve</h3>
+        <ul>
+          <li>✅ E-commerce & Retail</li>
+          <li>✅ Real Estate & Architecture</li>
+          <li>✅ Gaming & Animation</li>
+          <li>✅ Manufacturing & Engineering</li>
+        </ul>
+
+        <p><strong>Why Meta Clipping Studio?</strong> We combine creativity with technical expertise using Blender, 3ds Max, and Maya to deliver professional 3D outcomes. Fast turnaround and competitive pricing guaranteed.</p>
+
+        <p><strong>Get a Free Consultation</strong> and let us help you visualize your next big idea in 3D!</p>
+      `,
     },
     {
-      title:
-        "Real Estate Photo Editing: Transforming Property Images for Maximum Impact",
+      title: "Real Estate Photo Editing: Transforming Property Images",
       description:
-        "Introduction In the competitive real estate market, high-quality images play a crucial role in attracting buyers and closing deals faster.",
-      category: "Real-Estate Photo Editing",
-      image: "/showcase/gallery4.jpg",
-      link: "#",
-      content: "",
+        "Boost your property listings with expert real estate photo editing services from Meta Clipping Studio. HDR, sky replacement, and virtual staging included.",
+      category: "Real Estate Editing",
+      image: "/blogs/b-6.jpg",
+      slug: "real-estate-photo-editing",
+      content: `
+        <h2>Introduction</h2>
+        <p>At Meta Clipping Studio, we transform ordinary property photos into market-ready visuals. Our real estate photo editing services help listings stand out and drive sales faster with premium enhancements.</p>
+
+        <h3>Top Services We Offer</h3>
+        <ul>
+          <li><strong>Image Enhancement:</strong> Adjust brightness, sharpness, contrast, and color for stunning clarity.</li>
+          <li><strong>Sky Replacement:</strong> Swap dull skies with vibrant, sunny backgrounds to elevate appeal.</li>
+          <li><strong>HDR Blending:</strong> Combine multiple exposures for well-lit, detailed images.</li>
+          <li><strong>Virtual Staging:</strong> Add digital furniture and decor to empty rooms.</li>
+          <li><strong>Object Removal:</strong> Eliminate wires, clutter, and distractions for a clean finish.</li>
+          <li><strong>Window View Fixes:</strong> Balance interior and exterior exposures for a clear view.</li>
+          <li><strong>Lawn & Garden Enhancement:</strong> Improve greenery and outdoor aesthetics.</li>
+          <li><strong>3D Floor Plan & Visualization:</strong> Help buyers visualize space and layout better.</li>
+        </ul>
+
+        <h3>Why Meta Clipping Studio?</h3>
+        <ul>
+          <li>✅ Skilled Team of Editors</li>
+          <li>✅ Fast Delivery (24-48 Hours)</li>
+          <li>✅ Affordable Rates</li>
+          <li>✅ Satisfaction Guaranteed</li>
+        </ul>
+
+        <p>Choose Meta Clipping Studio for top-tier real estate image editing that helps you sell faster. <strong>Contact us today</strong> for a quote!</p>
+      `,
     },
   ],
 };

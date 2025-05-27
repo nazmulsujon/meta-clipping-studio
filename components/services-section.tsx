@@ -29,7 +29,7 @@ export function ServicesSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
             >
-              <div className="relative h-48">
+              <div className="relative h-72">
                 <Image
                   src={
                     service.image || `/placeholder.svg?height=192&width=300&text=${encodeURIComponent(service.title)}`
@@ -45,10 +45,10 @@ export function ServicesSection() {
               </div>
               <div className="p-4 pt-0 mt-auto">
                 <Link
-                  href={service.link || "#"}
+                  href="#hero_banner"
                   className="block text-center bg-[#1e4976] text-white py-2 px-4 text-sm hover:bg-[#2c5282] transition-colors"
                 >
-                  See More
+                  Click ME
                 </Link>
               </div>
             </motion.div>

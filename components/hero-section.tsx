@@ -13,7 +13,7 @@ import "swiper/css/pagination"
 
 export function HeroSection() {
   return (
-    <section className="relative w-full pt-20 pb-10 mt-8">
+    <section id="hero_banner" className="relative w-full pt-20 pb-10 mt-8">
       <Swiper
         effect="coverflow"
         grabCursor={true}
