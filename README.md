@@ -1,1 +1,1 @@
-meta clipping studio
+Meta clipping studio.
